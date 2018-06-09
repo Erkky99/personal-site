@@ -1,3 +1,9 @@
-#navbarSupportedContent{
-    float: right;
+#nav-items{
+    margin-right: 0 !important;
+}
+nav{
+    font-size: 25px
+}
+#main{
+    background-color: aqua
 }
