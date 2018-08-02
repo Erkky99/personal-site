@@ -4,6 +4,12 @@
 nav{
     font-size: 25px
 }
-#main{
-    background-color: aqua
+.sep{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#panel{
+    background-color: rgba(197, 211, 211, 0.473);
+    font-size: 115%;
+    margin-bottom: 50px;
 }

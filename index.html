@@ -9,7 +9,7 @@
     <script src="js/bootstrap.js"></script>
 </head>
 
-<body>
+<body id="bg">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">Erik Brink</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,33 +18,73 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto" id="nav-items">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Link<span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#bio">Biografi</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link1</a>
+                    <a class="nav-link" href="#edu">Utbildning</a>
                 </li>
                 <li class="nav-item">
-                        <a class="nav-link" href="#">Link2</a>
+                        <a class="nav-link" href="#project">Projekt</a>
                 </li>
                 <li class="nav-item">
-                        <a class="nav-link" href="#">Link3</a>
+                        <a class="nav-link" href="#goals">Mål</a>
                     </li>                
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                 </form>
             </div>
     </nav>
-    <div class="jumbotron w-75 mx-auto mt-5">
+    <div class="jumbotron w-75 mx-auto mt-5" id="welcome">
         <h1 class="display-4">Välkommen!</h1>
         <hr class="my-4">
+        <p>Mitt namn är Erik Brink och detta är min personliga hemsida! Här finner du lite information om mig och vad jag håller på med, både som student och programmerare.</p>
     </div>
-
-
-
+    <div class="container-fluid w-100">
+        <div class="row" id="panel">
+            <div class="col-9 border p-lg-5">
+                <h1 id="bio">Biografi</h1>
+                [Text om mig här]
+            </div>
+        <div class="col-3 border p-lg-5">
+            <img src="img/profilbild.jpg" alt="Bild på Erik" class="rounded-circle" width="100%" height="100%">
+        </div>
+        </div>
+    </div>
+    <div class="container-fluid w-100">
+            <div class="row" id="panel">
+                <div class="col border p-lg-5">
+                    <h1 id="edu">Utbildning</h1>
+                    [Text om min nuvarande och tidigare utbildning här]
+                </div>
+            </div>
+        </div>
+    <div class="container-fluid w-100">
+        <div class="row" id="panel">
+            <div class="col border p-lg-5">
+                <h1 id="project">Projekt</h1>
+                [Text om min nuvarande och tidigare projekt här]
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid w-100">
+        <div class="row" id="panel">
+            <div class="col border p-lg-5">
+                <h1 id="goals">Mål</h1>
+                [Text om min nuvarande och tidigare mål här]
+            </div>
+        </div>
+    </div>
+            
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script>
+        var imagesArray = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg']
+        var num = Math.floor(Math.random() * 10);
+        document.getElementById("bg").style.backgroundImage = "url(img/bg/" + imagesArray[num] + ")";
+        var classToAdd = imagesArray[num];
+    </script>
 </body>
 
 </html>
