@@ -8,8 +8,16 @@ nav{
     margin-left: 10px;
     margin-right: 10px;
 }
-#panel{
-    background-color: rgba(197, 211, 211, 0.473);
+.panel{
+    background-color: rgba(197, 211, 211, 0.808);
     font-size: 115%;
     margin-bottom: 50px;
+}
+#bg{
+    background-attachment: fixed;
+    background-size: cover;
+}
+#server-btn{
+    padding-left: 0;
+    font-size: 100%; 
 }
