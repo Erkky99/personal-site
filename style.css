@@ -21,3 +21,9 @@ nav{
     padding-left: 0;
     font-size: 100%; 
 }
+/*@media screen and (max-width: 430px){
+    #prof{
+        display: none;        
+    }
+}
+*/
